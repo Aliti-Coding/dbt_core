@@ -1,0 +1,11 @@
+version 2:
+
+sources:
+  - name: jaffle_shop
+    database: dw
+    schema: public_jaffle_shop
+    tables:
+    - name: payments
+    - name: customers
+    - name: orders
+  

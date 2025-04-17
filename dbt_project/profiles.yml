@@ -1,0 +1,11 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: dw_user
+      password: dw_password
+      port: 5432
+      dbname: dw
+      schema: 'public'

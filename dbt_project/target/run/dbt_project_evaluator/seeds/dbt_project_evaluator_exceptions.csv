@@ -1,0 +1,9 @@
+
+    
+    
+    truncate table "dw"."public"."dbt_project_evaluator_exceptions";
+    -- dbt seed --
+    
+
+;
+  

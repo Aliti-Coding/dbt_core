@@ -1,0 +1,28 @@
+name: 'my_dbt_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'default' # reading from profiles.yml
+
+model-paths: ["models"]
+seed-paths: ["seeds"]  # Add this line
+target-path: "target"
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+  
+models:
+  my_dbt_project:
+    staging:
+      +materialized: view
+    materialized: table
+
+seeds:
+  my_dbt_project:
+    +schema: jaffle_shop  # Base schema for all seeds
+    raw_customers:
+    raw_orders:
+    raw_items:
+    raw_products:
+    raw_stores:
+    raw_supplies:

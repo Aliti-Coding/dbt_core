@@ -1,0 +1,2 @@
+[sqlfluff]
+sqlfluff_templater_dbt = sqlfluff_templater_dbt

@@ -1,0 +1,12 @@
+models: 
+  - name: dim_model_7
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: id
+        data_type: "{{ 'UInt8' if target.type in ['clickhouse'] else 'int' }}"
+        constraints:
+          - type: not_null
+        data_tests:
+           - unique

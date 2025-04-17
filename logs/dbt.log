@@ -1,0 +1,122 @@
+[0m21:09:00.732668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072a7400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111492b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111149970>]}
+
+
+============================== 21:09:00.735078 | 2172e9f2-3af7-42a0-a23b-21def6f7d7ac ==============================
+[0m21:09:00.735078 [info ] [MainThread]: Running with dbt=1.8.0
+[0m21:09:00.735383 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/fehmmialiti/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt --no-version-check deps', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:09:00.735853 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/fehmmialiti/docker_learning/dbt_airflow/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:09:00.736709 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.03421204, "process_user_time": 0.535553, "process_kernel_time": 0.062587, "process_mem_max_rss": "90177536", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:09:00.736950 [debug] [MainThread]: Command `dbt deps` failed at 21:09:00.736901 after 0.03 seconds
+[0m21:09:00.737123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072a7400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111104f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111104c0>]}
+[0m21:09:00.737289 [debug] [MainThread]: Flushing usage events
+[0m21:20:12.931255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d28f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067b1370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067b1820>]}
+
+
+============================== 21:20:12.933758 | e34e1ec3-d667-4183-8fab-d17383f78bd3 ==============================
+[0m21:20:12.933758 [info ] [MainThread]: Running with dbt=1.8.0
+[0m21:20:12.934039 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/fehmmialiti/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:20:12.934433 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/fehmmialiti/docker_learning/dbt_airflow/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:20:12.935242 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.034054127, "process_user_time": 0.540346, "process_kernel_time": 0.068742, "process_mem_max_rss": "90243072", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:20:12.935493 [debug] [MainThread]: Command `dbt deps` failed at 21:20:12.935447 after 0.03 seconds
+[0m21:20:12.935659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d28f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067789d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067788b0>]}
+[0m21:20:12.935822 [debug] [MainThread]: Flushing usage events
+[0m19:56:38.042572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1025b4460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10401e1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10401ea90>]}
+
+
+============================== 19:56:38.045170 | df3ef180-f4a6-4927-9dff-f66e11ce6b85 ==============================
+[0m19:56:38.045170 [info ] [MainThread]: Running with dbt=1.8.0
+[0m19:56:38.045459 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/fehmmialiti/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m19:56:38.045855 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/fehmmialiti/docker_learning/dbt_airflow/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:56:38.046828 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.037642125, "process_user_time": 0.537721, "process_kernel_time": 0.067624, "process_mem_max_rss": "89833472", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:56:38.047029 [debug] [MainThread]: Command `dbt deps` failed at 19:56:38.046990 after 0.04 seconds
+[0m19:56:38.047188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1025b4460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ff8dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ff8910>]}
+[0m19:56:38.047343 [debug] [MainThread]: Flushing usage events
+[0m19:57:21.187943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103830f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055cd280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055cd970>]}
+
+
+============================== 19:57:21.191502 | f850dfa8-f2f3-4c4a-b50c-a6157a1d7870 ==============================
+[0m19:57:21.191502 [info ] [MainThread]: Running with dbt=1.8.0
+[0m19:57:21.191879 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/fehmmialiti/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:57:21.192378 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/fehmmialiti/docker_learning/dbt_airflow/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:57:21.193391 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.03967746, "process_user_time": 0.542304, "process_kernel_time": 0.065261, "process_mem_max_rss": "90521600", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:57:21.193659 [debug] [MainThread]: Command `dbt deps` failed at 19:57:21.193610 after 0.04 seconds
+[0m19:57:21.193853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103830f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105590b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105590ac0>]}
+[0m19:57:21.194043 [debug] [MainThread]: Flushing usage events
+[0m19:57:44.903073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1026cfd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041ad250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041ad8e0>]}
+
+
+============================== 19:57:44.905475 | 8871b243-52d7-4776-9f0d-1cfbf4c96c99 ==============================
+[0m19:57:44.905475 [info ] [MainThread]: Running with dbt=1.8.0
+[0m19:57:44.905752 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/fehmmialiti/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:57:44.906140 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/fehmmialiti/docker_learning/dbt_airflow/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:57:44.907045 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.0328965, "process_user_time": 0.539601, "process_kernel_time": 0.061018, "process_mem_max_rss": "89964544", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:57:44.907238 [debug] [MainThread]: Command `dbt deps` failed at 19:57:44.907198 after 0.03 seconds
+[0m19:57:44.907395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1026cfd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104148a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104170b20>]}
+[0m19:57:44.907549 [debug] [MainThread]: Flushing usage events
+[0m19:58:09.209508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102f90430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e0d280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e0d9d0>]}
+
+
+============================== 19:58:09.212408 | aeccf66c-d2fd-4161-a392-eb6c635b996d ==============================
+[0m19:58:09.212408 [info ] [MainThread]: Running with dbt=1.8.0
+[0m19:58:09.212726 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/fehmmialiti/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m19:58:09.213217 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/fehmmialiti/docker_learning/dbt_airflow/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:58:09.214149 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.04114496, "process_user_time": 0.535691, "process_kernel_time": 0.066878, "process_mem_max_rss": "90013696", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m19:58:09.214369 [debug] [MainThread]: Command `dbt deps` failed at 19:58:09.214323 after 0.04 seconds
+[0m19:58:09.214535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102f90430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104de8d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104de8a00>]}
+[0m19:58:09.214691 [debug] [MainThread]: Flushing usage events
+[0m22:09:04.673613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10809e8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0759d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a075bb0>]}
+
+
+============================== 22:09:04.676494 | 871e7fe5-8f6f-4103-aec9-d60885bfd295 ==============================
+[0m22:09:04.676494 [info ] [MainThread]: Running with dbt=1.9.3
+[0m22:09:04.676780 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/fehmmialiti/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m22:09:04.677090 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/fehmmialiti/docker_learning/dbt_airflow/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:09:04.678681 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.048801124, "process_in_blocks": "0", "process_kernel_time": 0.105937, "process_mem_max_rss": "96763904", "process_out_blocks": "0", "process_user_time": 0.594622}
+[0m22:09:04.678939 [debug] [MainThread]: Command `dbt seed` failed at 22:09:04.678887 after 0.05 seconds
+[0m22:09:04.679130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10809e8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a075bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a075550>]}
+[0m22:09:04.679303 [debug] [MainThread]: Flushing usage events
+[0m22:09:05.278021 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:16:50.976492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077c52b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108664eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108664280>]}
+
+
+============================== 20:16:50.986106 | ee73c966-2091-41ba-a3a2-46e11a8a06a9 ==============================
+[0m20:16:50.986106 [info ] [MainThread]: Running with dbt=1.9.3
+[0m20:16:50.986461 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/fehmmialiti/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:16:50.986951 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/fehmmialiti/docker_learning/dbt_airflow/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:16:50.992865 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": false, "command_wall_clock_time": 0.10097188, "process_in_blocks": "0", "process_kernel_time": 0.116339, "process_mem_max_rss": "98566144", "process_out_blocks": "0", "process_user_time": 0.621911}
+[0m20:16:50.993248 [debug] [MainThread]: Command `dbt deps` failed at 20:16:50.993170 after 0.10 seconds
+[0m20:16:50.993512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077c52b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108651850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086517f0>]}
+[0m20:16:50.993754 [debug] [MainThread]: Flushing usage events
+[0m20:16:51.482009 [debug] [MainThread]: An error was encountered while trying to flush usage events

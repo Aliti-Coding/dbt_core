@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table "dw"."public_jaffle_shop"."raw_products" ("sku" text,"name" text,"type" text,"price" integer,"description" text)
+  ;
+    -- dbt seed --
+    
+          insert into "dw"."public_jaffle_shop"."raw_products" ("sku", "name", "type", "price", "description") values
+          (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)
+      
+
+;
+  

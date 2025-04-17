@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table "dw"."public_jaffle_shop"."raw_stores" ("id" text,"name" text,"opened_at" timestamp without time zone,"tax_rate" float8)
+  ;
+    -- dbt seed --
+    
+          insert into "dw"."public_jaffle_shop"."raw_stores" ("id", "name", "opened_at", "tax_rate") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s)
+      
+
+;
+  

@@ -1,0 +1,6 @@
+packages:
+  - package: dbt-labs/dbt_utils
+    version: 1.3.0
+  - package: dbt-labs/dbt_project_evaluator
+    version: 1.0.0
+sha1_hash: a5738f63cac5ee06b939dff2d47553a550127511
