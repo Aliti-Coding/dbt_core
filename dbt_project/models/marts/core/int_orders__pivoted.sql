@@ -2,8 +2,7 @@
     table=ref('stg_jaffle_shop__payments'),
     column='paymentmethod'
 ) %}
-{# {{payment_methods}} #}
-{# ['credit_card', 'bank_transfer', 'coupon', 'gift_card'] #}
+
 
 with source as (
     select * from {{ ref('stg_jaffle_shop__payments') }}

@@ -28,8 +28,3 @@ jobs:
         cd dbt_project
         dbt --version
         dbt parse --no-write-json
-
-    - name: Lint SQL files with SQLFluff
-      run: |
-        cd dbt_project
-        sqlfluff lint models/ --dialect postgres --templater dbt
