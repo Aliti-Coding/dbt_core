@@ -32,4 +32,4 @@ jobs:
     - name: Lint SQL files with SQLFluff
       run: |
         cd dbt_project
-        sqlfluff lint models/ --dialect postgres
+        sqlfluff lint models/ --dialect postgres --templater dbt

@@ -5,7 +5,6 @@
 with unioned as (
 
     
-    
 
         (
             select
@@ -360,11 +359,11 @@ joined as (
     ) as position_folder,  
         nullif(unioned_with_calc.column_name, '') as column_name,
         
+        unioned_with_calc.macro_dependencies like '%macro.dbt.test_not_null%' and unioned_with_calc.resource_type = 'test' as is_test_not_null,  
+        
         unioned_with_calc.macro_dependencies like '%macro.dbt_utils.test_unique_combination_of_columns%' and unioned_with_calc.resource_type = 'test' as is_test_unique_combination_of_columns,  
         
         unioned_with_calc.macro_dependencies like '%macro.dbt.test_unique%' and unioned_with_calc.resource_type = 'test' as is_test_unique,  
-        
-        unioned_with_calc.macro_dependencies like '%macro.dbt.test_not_null%' and unioned_with_calc.resource_type = 'test' as is_test_not_null,  
         
         unioned_with_calc.is_enabled, 
         unioned_with_calc.materialized, 

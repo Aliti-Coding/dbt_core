@@ -3,7 +3,6 @@ with
 final as (
 
     
-    
 
         (
             select
