@@ -9,7 +9,9 @@ renamed as (
         "ORDERID" as order_id,
         "PAYMENTMETHOD" as paymentmethod,
         "STATUS" as status,
-        "AMOUNT" as amount,
+        
+AMOUNT / 100
+ as amount,
         "CREATED" as created
     from source
 )

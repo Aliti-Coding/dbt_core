@@ -1,0 +1,35 @@
+name: dbt Code Quality
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install sqlfluff sqlfluff-templater-dbt dbt-core dbt-postgres
+
+    - name: Check dbt project structure
+      run: |
+        cd dbt_project
+        dbt --version
+        dbt parse --no-write-json
+
+    - name: Lint SQL files with SQLFluff
+      run: |
+        cd dbt_project
+        sqlfluff lint models/ --dialect postgres
