@@ -32,5 +32,11 @@ jobs:
     - name: Check model naming conventions
       run: |
         cd dbt_project
-        python scripts/check_naming_conventions.py
+        if [ -f "scripts/check_naming_conventions.py" ]; then
+          python scripts/check_naming_conventions.py models
+        else
+          echo "Script not found at scripts/check_naming_conventions.py"
+          find . -type f -name "check_naming_conventions.py"
+          exit 1
+        fi
     
