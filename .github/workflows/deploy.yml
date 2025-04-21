@@ -28,3 +28,9 @@ jobs:
         cd dbt_project
         dbt --version
         dbt parse --no-write-json
+
+    - name: Check model naming conventions
+      run: |
+        cd dbt_project
+        python scripts/check_naming_conventions.py models
+    
