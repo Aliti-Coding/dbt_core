@@ -71,7 +71,7 @@ def get_parent_directory(file_path: str) -> str:
         for directory in type_conventions.keys():
             if directory != "default":
                 special_dirs.add(directory)
-                print(directory)
+               
     # print(special_dirs)
     # Look for special directories in the path
     for special_dir in special_dirs:
@@ -170,7 +170,7 @@ def print_results(issues: List[Dict[str, str]], stats: Dict[str, int]) -> None:
 def main():
     """Main function to check naming conventions."""
     # Parse command line arguments
-    target_dir = sys.argv[1] if len(sys.argv) > 1 else "."
+    target_dir = sys.argv[1] if len(sys.argv) > 1 else "dbt_project/models"
     config_path = sys.argv[2] if len(sys.argv) > 2 else None
     
     # Load conventions
@@ -178,8 +178,8 @@ def main():
     
     # Find files
     print(f"{BLUE}Checking naming conventions in {target_dir}...{RESET}")
-    target_dir_default = "dbt_project/models"
-    all_files = find_files(target_dir_default)
+    # target_dir_default = "dbt_project/models"
+    all_files = find_files(target_dir)
     
     # Check each file
     issues = []
