@@ -1,4 +1,4 @@
-FROM apache/airflow:2.8.1
+FROM apache/airflow:3.0.0
 
 USER root
 RUN apt-get update && apt-get install -y python3-venv

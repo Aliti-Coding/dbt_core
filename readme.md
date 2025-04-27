@@ -9,7 +9,7 @@ docker exec -it 6fa15270a5f9 psql -U dw_user -d dw
 exit db terminal = q
 
 SELECT schema_name
-FROM information_schema.schemata;q
+FROM information_schema.schemata;
 
 
 
